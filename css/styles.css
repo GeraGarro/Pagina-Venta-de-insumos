@@ -1,0 +1,153 @@
+:root{--colorcobre: #B87333;
+    --azuldegrado:#11223f;
+    --aguaMarina:#9fd5d1;
+    --verde:#00A149;
+    --blanco:#fff;
+    --rojo: #881014;
+    --oscuro: #000;
+    --azulMarino:#1974D2;
+    ---titulos:"Arima Madurai",curive;
+    --parrafos:"Mulish",sans-serif;
+}
+
+p{
+font-family: var(--parrafos);
+
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+
+*,*::after, *::before{
+box-sizing: inherit;
+}
+
+body{font-size: 1.6rem;
+overflow-x: hidden;
+}
+.logo h2{
+    font-size: 2.3rem;
+}
+.logo img{
+    height: 5rem;
+    border-radius: 80%;
+}
+.logo h2,.navegacion{
+color: var(--blanco);
+}
+
+.navegacion a{
+    display: block;
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 2rem;
+    padding: 1.5rem;
+    transition: color .3s ease-in-out;
+}
+.navegacion a:nth-child(even):hover{
+    color: var(--azulMarino);
+}
+.navegacion a:nth-child(odd):hover{
+color: var(--colorcobre);
+}
+.navegacion a:first-of-type{
+    margin-top: 4rem;
+}
+.navegacion{
+    position: absolute;
+    top: 0;
+    right: 0;
+   bottom: 0;
+   height: 100vh;
+   width: 30rem;
+   padding: 2rem 4rem;
+    background-color: var(--verde);
+    animation: desplazamiento .5s ease-in-out;
+}
+/*Globales*/
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}
+h1,h2{
+    font-family: var(---titulos);
+}
+
+h3,p,a{
+  font-family:var(--parrafos) ;  
+}
+.azulDegradado{
+   color: var(--azuldegrado); 
+}
+
+.ocultar{
+display: none;
+
+}
+
+.boton-cerrar{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--blanco);
+    position: absolute;
+    top: 0;
+    right: 5rem;
+    user-select: none;
+    
+}
+
+.pantalla-completa{
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, .5);
+z-index: 4;
+}
+
+@keyframes desplazamiento{
+    0%{
+        transform: translateX(100%);
+
+    }
+    100%{
+       transform: translateX(0) {
+
+       }; 
+    }
+}
+
+.boton-cerrar:hover{
+cursor: pointer;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.contenedor-navegacion{
+background-color: var(--aguaMarina);
+position: relative;
+z-index: 5;
+
+}
+.contenido-navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boton-hamburgueza span{
+    background-color: var(--blanco);
+    display: block;
+    width: 5rem;
+    height: .5rem;
+    margin-bottom: 1rem;
+    
+
+}

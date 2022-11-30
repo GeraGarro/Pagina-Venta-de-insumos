@@ -1,125 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Principal</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="skeleton.css">
-    <link rel="stylesheet" href="styles.css">
-
-
+    <title>Proveeduria Odontologica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
-    <header>
-        
+<header class="encabezado">
+
+    <div class="contenedor-navegacion">
+        <div class="contenido-navegacion contenedor">
             <div class="logo">
                 <img src="imagenes/logo4.png" alt="">
+                <h2><span class="azulDegradado">Odonto</span>city</h2>
             </div>
-       
+            <nav class="navegacion ocultar">
+                <a href="#">Inicio</a>
+                <a href="#">Catalogo</a>
+                <a href="#">Institucion</a>
+                <a href="#">Contacto</a>
 
-    <div class="menu">
-        <nav><ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Institucion</a></li>
-            <li><a href="">Contactenos</a></li>
-            
-        </ul>
-    </nav>
-    </div>
-<div class="Carrito">
-    <ul>
-        <li class="submenu">
-            <img src="imagenes/carrito.png" alt="" id=img-carrito>
-            <div id="carrito">
-                <table id="listaDelCarrito" class="u-full-width">
-                    <thead>
-                        <tr>
-                            <th>Imagen</th>
-                            <th>Nombre</th>
-                            <th>Precio</th>
-                            
+            </nav>
 
-                        </tr>
-                    </thead>
-                    <tbody></tbody>
-
-                </table>
-                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
-                    </div>
-
-                     </li>
-                 </ul>
+            <div class="boton-hamburgueza">
+                <span></span><span></span><span></span>
             </div>
-
-    </header>
-
-    <div class="Categorias">
-        <ul>
-           <li><a href="">Descartables</a></li>
-            <li><a href="">Endodoncia</a></li>
-            <li><a href="">Cirugia</a></li>
-            <li><a href="">Protesis</a></li>
-            <li><a href="">Varios</a></li>
-
-        </ul>
+        </div>
 
 
     </div>
-   
-<main>
-
-    <div class="Contenedor_Productos">
-
-    
-        <div class="Producto">
-            <img src="descartables.jpg" alt="">
-            <div class="Nombre_Producto">
-               
-                <a href="Materiales/Descartables/descartables.html"> <h4>Descartables</h4></a>
-            </div>
-        </div>
-
-    
-        <div class="Producto">
-            <img src="Protesis.jpeg" alt="">
-            <div class="Nombre_Producto">
-                
-                <a href="Materiales/Protesis/protesis.html"><h4>Protesis</h4></a>
-            </div>
-        </div>
-
-    
-        <div class="Producto">
-            <img src="endodoncia.jpg" alt="">
-            <div class="Nombre_Producto">
-                
-                <a href="Materiales/Endodoncia/endodoncia.html"><h4>Endodoncia</h4></a>
-
-            </div>
-        </div>
 
 
-        <div class="Producto">
-            <img src="cirugia-bucal.jpg" alt="">
-            <div class="Nombre_Producto">
-               <a href="Materiales/Cirugia/cirugia.html"><h4>Cirujia</h4></a>
-            </div>
-        </div>
+</header>
+<script src="json/app.js"></script>
 
-        <div class="Producto">
-            <img src="varios.jpg" alt="">
-            <div class="Nombre_Producto">
-                
-                <a href="Materiales/Varios/varios.html"><h4>Varios</h4></a>
-            </div>
-        </div>
-    </div>
-</main>
+
 
 </body>
 
 </html>
-
