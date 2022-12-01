@@ -10,38 +10,254 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Permanent+Marker&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-<header class="encabezado">
+    <header class="encabezado">
 
-    <div class="contenedor-navegacion">
-        <div class="contenido-navegacion contenedor">
-            <div class="logo">
-                <img src="imagenes/logo4.png" alt="">
-                <h2><span class="azulDegradado">Odonto</span>city</h2>
+        <div class="contenedor-navegacion">
+            <div class="contenido-navegacion contenedor">
+                <div class="logo">
+                    <img data-src="imagenes/logo4.png" alt="">
+                    <h2><span class="azulDegradado">Odonto</span>city</h2>
+                </div>
+                <nav class="navegacion ocultar">
+                    <a href="#">Inicio</a>
+                    <a href="#">Catalogo</a>
+                    <a href="#">Institucion</a>
+                    <a href="#">Contacto</a>
+
+                </nav>
+
+                <div class="boton-hamburgueza">
+                    <span></span><span></span><span></span>
+                </div>
             </div>
-            <nav class="navegacion ocultar">
-                <a href="#">Inicio</a>
-                <a href="#">Catalogo</a>
-                <a href="#">Institucion</a>
-                <a href="#">Contacto</a>
 
-            </nav>
 
-            <div class="boton-hamburgueza">
-                <span></span><span></span><span></span>
-            </div>
+        </div>
+        <div class="contenido-header">
+            <dic class="contenedor-encabezado">
+                <div class="texto-encabezado">
+                    <h2>Bienvenido a</h2>
+                    <h1>Odontocity</h1>
+                    <a href="#" class="btn bordes">Nuestro Catalogo</a>
+                </div>
+                <img data-src="heropri.jpg" alt="">
+            </dic>
         </div>
 
+    </header>
 
+    <div class="contenedor-nosotros">
+        <div class="texto-nosotros">
+            <p class="bienvenidoParrafo">Bienvenido a!</p>
+            <h1>Odontocity</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Quas culpa minus facere,<br> ipsa id ea vero
+                nesciunt veniam, esse sed atque nulla odit! Earum illum labore, ut iusto inventore officia?
+            </p>
+            <a href="#" class="btn btn-rojo">Contactar</a>
+
+        </div>
+        <div class="imagenes-nosotros">
+            <div class="imagen1">
+                <img data-src="imagenes/imagen1.jpg" alt="odontologia1">
+            </div>
+            <div class="imagen2">
+                <img data-src="imagenes/odontologia2.png" alt="odontologia2">
+                <img data-src="imagenes/odontologia3.png" alt="odontologia3">
+            </div>
+
+        </div>
     </div>
+    <section class="productos-contenedor">
+        <h2 class="texto-tit">Productos</h2>
+        <div class="botones-categorias">
+            <button class="Todos btn btn-azul">Todos</button>
+            <button class="Descartables btn btn-azul">Descartables</button>
+            <button class="Protesis btn btn-azul">Protesis</button>
+            <button class="Cirujia btn btn-azul">Cirugia</button>
+            <button class="Endodoncia btn btn-azul">Endodoncia</button>
+            <button class="Anestesia btn btn-azul">Anestesia y Agujas</button>
+        </div>
+        
+        <div class="productos">
+           
+            <div class="producto" data-producto="descartable">
+                <img data-src="Materiales/Descartables/g3.png" alt="guantes2">
+                <h2>Guantes Descartables Densell x100</h2>
+                <div class="precio">
+                    <p>$1101.55</p>
+                    <button>Comprar</button>
+                </div>
+            </div>  
 
+                <div class="producto" data-producto="descartable">
+                    <img data-src="Materiales/Descartables/Barbijos/b3.png" alt="barbijos1">
+                    <h2>Barbijos ION x20</h2>
+                    <div class="precio">
+                        <p>$466</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
 
-</header>
-<script src="json/app.js"></script>
+                <div class="producto" data-producto="descartable">
+                    <img data-src="Materiales/Descartables/Barbijos/b4.png" alt="barbijos2">
+                    <h2>Barbijos tricapa KN95 reforzada x20</h2>
+                    <div class="precio">
+                        <p>$652.99</p>
+                        <button>Comprar</button>
+                    </div>
+
+                </div>
+
+                <div class="producto" data-producto="descartable">
+                    <img data-src="Materiales/Descartables/Compresas/c2.png" alt="compresa">
+                    <h2>Compresas UltraOne</h2>
+                    <div class="precio">
+                        <p>$566</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+               
+                 <!-- //Protesis// -->
+
+                <div class="producto" data-producto="protesis">
+                    <img data-src="Materiales/Protesis/adhesivo1.png" alt="adhesivo1">
+                    <h2>Adhesivo Single Bond2 3M</h2>
+                    <div class="precio">
+                        <p>$2500</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+                <div class="producto" data-producto="protesis">
+                    <img data-src="Materiales/Protesis/recina3.png" alt="recina2">
+                    <h2>Z250 A2 3M</h2>
+                    <div class="precio">
+                        <p>$3155</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+                <div class="producto" data-producto="protesis">
+                    <img data-src="Materiales/Protesis/dientes1.png" alt="diente">
+                    <h2>Acritone Dientes</h2>
+                    <div class="precio">
+                        <p>$566</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+                <div class="producto" data-producto="protesis">
+                    <img data-src="Materiales/Protesis/recina2.png" alt="recina1">
+                    <h2>Z350 3M</h2>
+                    <div class="precio">
+                        <p>$566</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+            
+                <!-- Cirugia -->
+                <div class="producto" data-producto="Cirugia">
+                    <img data-src="Materiales/Cirugia/Sindesmotomo CHOMPRET . MEDESY.png" alt="Sindesmotomo">
+                    <h2>Sindesmotomo  </h2>
+                    <div class="precio">
+                        <p>$1500</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+                <div class="producto" data-producto="Cirugia">
+                    <img data-src="Materiales/Cirugia/Hemostatico.png" alt="Hemostatico">
+                    <h2>Hemostatico TEDEQUIM</h2>
+                    <div class="precio">
+                        <p>$3400.99</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+                <div class="producto" data-producto="Cirugia">
+                    <img data-src="Materiales/Cirugia/Membrana.png" alt="Membrana">
+                    <h2>OStiumMax Membrana </h2>
+                    <div class="precio">
+                        <p>$4300</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+                <div class="producto" data-producto="Cirugia">
+                    <img data-src="Materiales/Cirugia/Suturas.png" alt="Suturas">
+                    <h2>Suturas NYLON DOCHEM</h2>
+                    <div class="precio">
+                        <p>$566</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+
+                <!-- Endodoncia -->
+
+                <div class="producto" data-producto="Endodoncia">
+                    <img data-src="Materiales/Endodoncia/cono de guta.png" alt="cono de guta">
+                    <h2>Conos de Guta</h2>
+                    <div class="precio">
+                        <p>$1755</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+                <div class="producto" data-producto="Endodoncia">
+                    <img data-src="Materiales/Endodoncia/cemento grossman.png" alt="cemento">
+                    <h2>Cemento de grossman</h2>
+                    <div class="precio">
+                        <p>$2100</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+                <div class="producto" data-producto="Endodoncia">
+                    <img data-src="Materiales/Endodoncia/Goma dique.png" alt="goma dique">
+                    <h2>Goma dique Densell</h2>
+                    <div class="precio">
+                        <p>$766</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+                <div class="producto" data-producto="Endodoncia">
+                    <img data-src="Materiales/Endodoncia/Escariadores.png" alt="Escariadores">
+                    <h2>AZDEM Escariadores</h2>
+                    <div class="precio">
+                        <p>$2800</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+
+                <!-- Anestesia -->
+
+                <div class="producto" data-producto="Anestesia">
+                    <img data-src="Materiales/Varios/Anestesia Force.png" alt="anes force">
+                    <h2>ANESCART Force</h2>
+                    <div class="precio">
+                        <p>$5500</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+                <div class="producto" data-producto="Anestesia">
+                    <img data-src="Materiales/Varios/Blanqueador.png" alt="blanqueador">
+                    <h2>Kleep Blanqueador</h2>
+                    <div class="precio">
+                        <p>$3330</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+                <div class="producto" data-producto="Anestesia">
+                    <img data-src="Materiales/Varios/Bolsas residuos.png" alt="bolsas">
+                    <h2>Bolsas para residuos Patologicos</h2>
+                    <div class="precio">
+                        <p>$300</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+
+           
+            </div>
+    </section>
+
+    <script src="json/app.js"></script>
 
 
 
